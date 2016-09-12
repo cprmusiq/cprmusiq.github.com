@@ -1,0 +1,27 @@
+.record_cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.record_card{
+	border: 1px solid #5461DD;
+	border-radius: 1px;
+    width: 45em;
+    height: 30em;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.youtube{
+    width: 45em;
+    height: 30em;
+}
+
+@media only screen and (max-width: 768px){
+	.record_card, .youtube{
+		width: 300px;
+		height: 200px;
+	}
+}

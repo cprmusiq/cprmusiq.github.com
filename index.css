@@ -1,0 +1,105 @@
+/*기본 css 설정*/
+
+body{
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*header css*/
+
+header{
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6{text-align: center;}
+
+.logo.img{
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.logo_img img{
+	width: 80px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.logo_img::before{
+	content: 'CPRmusiq_Project';
+	position: absolute;
+	top: 51px;
+    font-family: monospace;
+    transition: 0.3s ease;
+    color: transparent;
+}
+
+.logo_img:hover::before{
+	display: inline-block;
+	transform: translateX(112px);
+	color: #000;
+}
+@media only screen and (max-width: 768px){
+	.logo_img::before, .logo_img:hover::before{
+		display: none;
+	}
+}
+
+.nav_gb{
+	float: right;
+}
+
+.nav_gb ul{
+	width: 270px;
+    position: absolute;
+    top: 0;	
+    right: 0;
+    margin-top: 0;
+}
+
+.nav_gb a {
+	float: left;
+    padding: 16px;
+    margin-top: 19px;
+}
+
+.nav_gb li{
+	list-style: none;
+	color: black;
+	font-weight: 300;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+/*main css*/
+
+main{
+	width: 100%;
+}
+
+.main_logo{
+	text-align: center;
+}
+
+.main_logo_img{
+	margin: 3em;
+	transition: 0.2s ease;
+	width: 40%;
+}
+
+.main_logo_img:hover{
+	transform: scale(1.1);
+}
+
+.copyright{
+	text-align: center;
+}
+.copyright p{
+	font-size: 13px;
+	color: #5d5a5a;
+	margin-bottom: 20px;
+}
