@@ -29,6 +29,12 @@ h1, h2, h3, h4, h5, h6{text-align: center;}
     overflow: hidden;
 }
 
+@media only screen and (max-width: 768px){
+	.logo_img img{
+		width: 14%;
+	}
+}
+
 .logo_img::before{
 	content: 'CPRmusiq_Project';
 	position: absolute;
@@ -75,6 +81,12 @@ h1, h2, h3, h4, h5, h6{text-align: center;}
 	font-size: 16px;
 }
 
+@media only screen and (max-width: 768px){
+	.nav_gb li {
+		font-size: 14px;
+	}
+}
+
 /*main css*/
 
 main{
@@ -102,4 +114,53 @@ main{
 	font-size: 13px;
 	color: #5d5a5a;
 	margin-bottom: 20px;
+}
+
+/*contact part*/
+
+.contact_text_page{
+	width: 100%;
+	text-align: center;
+}
+
+.contact_text{
+	width: 60%;
+    height: 400px;
+    border: 2px solid currentColor;
+    border-radius: 10px;
+    background: #ffffe6;
+}
+
+/* about us page */
+.location_map{
+	text-align: center;
+}
+.location_map img{
+	width: 80%;
+}
+.location_field{
+	font-size: 11px;
+	margin-bottom: 10%;
+}
+
+.yeontral, .mapodaegyo{
+	position: relative;
+	margin-left: 23%;
+}
+
+.yeontral::before{
+	content: '';
+	border: 5px solid #FA5F00;
+	border-radius: 10px;
+	position: absolute;
+	top: 2px;
+	left: -16px;
+}
+.mapodaegyo::before{
+	content: '';
+	border: 5px solid #55FF3F;
+	border-radius: 10px;
+	position: absolute;
+	top: 2px;
+	left: -16px;
 }
