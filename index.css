@@ -136,16 +136,28 @@ main{
 	text-align: center;
 }
 .location_map img{
-	width: 80%;
+	width: 50%;
 }
 .location_field{
-	font-size: 11px;
 	margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 768px){
+	.location_field{
+		font-size: 11px;
+	}
+	.location_map img{
+		width: 80%;
+	}
+	.yeontral, .mapodaegyo{
+		margin-left: 28% !important;
+		transform: none;
+	}
 }
 
 .yeontral, .mapodaegyo{
 	position: relative;
-	margin-left: 23%;
+	margin-left: 36%;
 }
 
 .yeontral::before{
