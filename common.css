@@ -32,7 +32,8 @@ body {
 .box {
     position:relative;
     background-size: cover;
-    transition:all 0.2s;
+    background-position: center center;
+    transition: all 0.2s;
 }
 
 .box:after {
