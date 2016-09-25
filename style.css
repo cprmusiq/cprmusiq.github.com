@@ -1,0 +1,198 @@
+body {
+	background:#A1C8FF url("") no-repeat top center;
+	background-size:800px;
+}
+
+.header {
+	text-align:center;
+}
+
+.header * {vertical-align:middle;}
+.header h1 {
+	margin: 0 18px 33px 18px;
+	padding: 80px 0 58px 0;
+	border-bottom: 1px solid #737680;
+}
+
+.header-logo {
+    width:178px;
+    height:51px;
+    background:url("images/cprmusic_lowercase.png") no-repeat;
+    background-size:contain;
+}
+.header-disk{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+.header-cprmusiq{
+	animation: AA ease;
+	animation-duration: 3s;
+	animation-iteration-count: 3;
+}
+
+@keyFrames AA{
+	0%{
+		transform: scale(0.9);
+	}
+
+	50%{
+		transform: scale(1.1);
+	}
+
+	100%{
+		transform: scale(0.9);
+	}
+}
+
+.header_btn_wrap {display:inline-block;}
+
+.header-category-btn {
+    width:33px;
+    height:25px;
+    background:url("images/icon-hamberger.png") no-repeat;
+}
+
+.header-search {
+	position:relative;
+    width:35px;
+    height:35px;
+    background:url("images/icon-search.png") no-repeat;
+}
+
+.header-search input[type="text"]::-webkit-input-placeholder {
+	color:#fff;
+}
+
+.header-search input[type="submit"] {
+	position: absolute;
+    top: -1000px;
+}
+
+.header-checkout-btn {
+    width:42px;
+    height:32px;
+    background:url("images/icon-card.png") no-repeat;
+}
+
+.header-btn {
+	display:inline-block;
+	margin:0 30px;
+	background-size:100%;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.header-category {
+	position:fixed;
+	left:-300px;
+	width:300px;
+}
+
+.hero-text {
+	max-width:540px;
+	margin:180px auto 0 auto;
+	text-align:center;
+}
+.hero-text h2 {
+	margin-bottom:21px;
+	padding:0 18px;
+	font-size:27px;
+	line-height:1.5;
+	letter-spacing:-1px;	
+}
+
+.hero-text h2 strong {
+	display:block;
+	font-size:32px;
+	font-weight:100;
+}
+
+.hero-text-btn {
+	position: relative;
+	display:inline-block;
+	padding:12px 30px;
+	font-size:18px;
+	font-weight:900;
+	overflow: hidden;
+	transition: all 0.2s;
+}
+
+.hero-text-btn:before {
+	content: '';
+    border-right: none;
+    border-left: 13px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+.hero-text-btn>p{
+	position: relative;
+    right: -7px;
+}
+
+.hero-text-btn:hover:before {
+	width:0;
+	margin:0;
+}
+
+.hero-text-btn:hover:after {
+	left:0;
+}
+
+.footer {
+	padding:50px;
+	background:#141728;
+	text-align: center;
+}
+
+.footer-logo {
+	width:172px;
+	height:41px;
+	margin-bottom:50px;
+	background-image: url("images/cprmusic_lowercase.png");
+	background-size: cover;
+}
+.sns_link span{
+	transition: all 0.2s ease;
+}
+.sns_link span:hover{
+	transform: scale(1.2);
+}
+
+.sns_link {
+	width:100%;
+	margin-bottom:50px;
+}
+
+.sns_link li {
+	float:left;
+	width:33.33%;
+	font-size:38px;
+}
+
+.etc-list li {
+	margin-bottom:25px;
+	text-align:left;
+	font-size:18px;
+	position: relative;
+	overflow: hidden;
+}
+
+.etc-list a{
+	border-bottom: 1px solid transparent;
+	transition: all 0.4s ease;
+
+}
+
+.etc-list a:hover{
+	border-bottom: 1px solid;
+}
+
+.copyright p{
+	font-size: 13px;
+    margin-top: 10px;
+}
