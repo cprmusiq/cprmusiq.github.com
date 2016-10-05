@@ -2,14 +2,42 @@ body {
 
 }
 
-.header {
+.main {
 	text-align:center;
+    overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
 }
 
 .header * {vertical-align:middle;}
 .header h1 {
 	margin: 0 18px 33px 18px;
 	padding: 80px 0 0 0;
+}
+
+.concert107{
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	background: rgb(69,72,77); /* Old browsers */
+background: -webkit-linear-gradient(rgba(69,72,77,1) 0%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 76%, rgba(0,0,0,1) 78%);
+background: -o-linear-gradient(rgba(69,72,77,1) 0%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 76%, rgba(0,0,0,1) 78%);
+background: linear-gradient(rgba(69,72,77,1) 0%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 76%, rgba(0,0,0,1) 78%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+
+}
+.concert107 img, .header-disk img{
+	width: 300px;
+    transform: translateY(50%);
+}
+
+.concert107_img{
+	width: 80%;
 }
 
 .sns_link .fa {
@@ -24,7 +52,8 @@ body {
 }
 .header-disk{
 	text-align: center;
-    width: 80%;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
 }
 

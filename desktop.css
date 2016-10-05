@@ -1,8 +1,11 @@
 @media (min-width:1180px) {
-	.header-disk{
-	text-align: center;
-    width: 50%;
-    margin: 0 auto;
+	.concert107 img, .header-disk img{
+    width: 500px;
+    transform: translateY(10%);
+	}
+
+	.sns_link li{
+		font-size: 60px;
 	}
 
 }
