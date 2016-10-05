@@ -17,14 +17,14 @@
 
 	.concert107 img{
     transform: translateY(0);
-    width: 80%;
+    width: 300px;
     margin-top: 150px;
 	}
-	
+
 	.header-disk{
 		height: 600px;
 	}
 	.header-disk img{
-		width: 80%;
+		width: 300px;
 	}
 }
