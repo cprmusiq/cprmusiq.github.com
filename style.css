@@ -2,9 +2,9 @@ body {
 
 }
 
-.main_site {
-	text-align:center;
-    overflow-x: hidden;
+.container {
+  text-align: center;
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   width: 100%;
