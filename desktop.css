@@ -1,5 +1,5 @@
 @media (min-width:1180px) {
-	.concert107 img, .header-disk img{
+	.concert107 img{
     width: 500px;
     transform: translateY(10%);
 	}
@@ -8,4 +8,23 @@
 		font-size: 60px;
 	}
 
+}
+
+@media (max-height: 570px) {
+	.concert107 {
+    height: 600px;
+	}
+
+	.concert107 img{
+    transform: translateY(0);
+    width: 80%;
+    margin-top: 150px;
+	}
+	
+	.header-disk{
+		height: 600px;
+	}
+	.header-disk img{
+		width: 80%;
+	}
 }

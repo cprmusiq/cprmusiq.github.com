@@ -37,9 +37,14 @@ background: -o-linear-gradient(rgba(69,72,77,1) 0%, rgba(0,0,0,1) 62%, rgba(0,0,
 background: linear-gradient(rgba(69,72,77,1) 0%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 76%, rgba(0,0,0,1) 78%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
 
 }
-.concert107 img, .header-disk img{
+.concert107 img{
 	width: 300px;
-    transform: translateY(40%);
+    transform: translateY(50%);
+}
+
+.header-disk img{
+	width: 300px;
+	margin-top: 60px;
 }
 
 .concert107_img{
@@ -80,6 +85,7 @@ background: linear-gradient(rgba(69,72,77,1) 0%, rgba(0,0,0,1) 62%, rgba(0,0,0,1
 .index_footer{
 	position: absolute;
 	bottom: 0;
+	width: 100%;
 }
 
 .footer-logo {
