@@ -39,6 +39,7 @@ body {
 }
 
 .concert107{
+	display: none;
 	text-align: center;
 	background: rgb(69,72,77); /* Old browsers */
 background: -webkit-linear-gradient(rgba(69,72,77,1) 0%, rgba(0,0,0,1) 62%, rgba(0,0,0,1) 76%, rgba(0,0,0,1) 78%);
