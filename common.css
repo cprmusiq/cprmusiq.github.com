@@ -149,6 +149,9 @@ body {
     .textbox-inner .button {
         font-size:16px;
     }
+    .sns_link {
+        margin: 0 auto 50px auto;
+    }
 }
 
 .photo02 p {
