@@ -1,10 +1,10 @@
-@media screen (max-width: 350px) {
+@media (max-width: 350px) {
 	.header-disk{
 		width: 70%;
 	}
 }
 
-@media screen (min-width: 1180px) {
+@media (min-width: 1180px) {
 	.sns_link li {
 		font-size: 60px;
 	}
