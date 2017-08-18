@@ -7,23 +7,31 @@
 /*header*/
 
 .header{
-	padding: 50px 50px 0;
+	padding: 30px 20px 0;
 }
 
 .nav{
 	margin: 0 auto;
-	max-width: 400px;
+	max-width: 500px;
+}
+
+ul.navigation{
+	border-bottom: 1px solid #adadad;
+    padding-bottom: 20px;
 }
 
 .nav li{
 	float: left;
-	color: #000;
-	font-family: 'Asap Condensed', sans-serif;
+    color: #000;
+    font-family: 'Asap Condensed', sans-serif;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 .header-disk img{
 	width: 300px;
-	margin-top: 60px;
+	margin-top: 30px;
 }
 
 .sns_link .fa {
