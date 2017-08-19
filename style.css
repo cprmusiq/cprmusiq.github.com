@@ -1,3 +1,7 @@
+div, p, a, span{
+	color: #000;
+}
+
 .container_site {
   text-align: center;
   width: 100%;
@@ -28,7 +32,9 @@ ul.navigation{
     font-size: 20px;
     margin-left: 5px;
 }
-
+.nav li a{
+	color: #000;
+}
 .header-disk img{
 	width: 300px;
 	margin-top: 50px;
@@ -123,4 +129,15 @@ ul.navigation{
 .footer-inner{
 	max-width: 500px;
 	margin: 0 auto;
+}
+
+/*sections - album page*/
+.section-inner-wrap{
+	padding: 20px;
+}
+
+.album-img{
+	max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
