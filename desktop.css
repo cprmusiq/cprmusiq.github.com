@@ -16,7 +16,7 @@
 @media (max-width: 392px){
 	.scd .calendar td {
 	    height: 3em;
-	    line-height: 2.2em;
+	    line-height: 2.5em;
 	    width: 3em;
 	}
 	.scd h2 {
@@ -24,5 +24,8 @@
 	}
 	.scd.container{
 		margin: 25px 2% 0;
+	}
+	.event:after {
+	    bottom: 1.5px;
 	}
 }
