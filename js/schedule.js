@@ -1,4 +1,4 @@
-(document).ready(function($) {
+$(document).ready(function() {
 	$('.event').click(function(){
         var theDate = $(this).text();
         $('.date-s').text(theDate);
