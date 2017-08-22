@@ -9,15 +9,16 @@
     <meta name="keywords" content="CPRmusic, CPRmusiq">
     <title>CPRmusiq_project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="ress.css">
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="schedule.css">
-    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="/css/ress.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/schedule.css">
+    <link rel="stylesheet" href="/css/desktop.css">
     <link rel="icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <script scr="js/jquery-3.1.0.slim.min.js"></script>
 </head>
 
 <body>
@@ -129,7 +130,18 @@
                 </div> <!-- end calendar -->
 
             </div> <!-- end container -->
-                
+        <div class="schedule-wrapper">
+            <div class="scd01">
+                <p><i class="fa fa-check" aria-hidden="true"></i>
+                <span class="date-s"></span>일
+                홍대 버스킹 17:30~</p>
+            </div>
+            <div class="scd02">
+                <p><i class="fa fa-check" aria-hidden="true"></i>
+                <span class="date-s"></span>일
+                싱글 2집 발표 17:30~</p>
+            </div>
+        </div>
         </main>
         <footer class="footer index_footer">
             <div class="footer-inner clearfix">
@@ -147,6 +159,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        $('.scd01').hide();
+        $('.scd02').hide();
+
+        $('.event').click(function(){
+            var theDate = $(this).text();
+            $('.date-s').text(theDate);
+            if(theDate == 11){
+              $('.scd01').show().siblings().hide();
+            }else if(theDate == 22){
+              $('.scd02').show().siblings().hide();
+            }
+        });
+    </script>
 </body>
 
 </html>

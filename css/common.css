@@ -1,0 +1,189 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size:14px;
+    line-height:1.5;
+    color:#000;
+}
+
+.readable-hidden {
+    position:absolute;
+    line-height:0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ir {
+    display:inline-block;
+    text-indent: -9999px;
+}
+
+.clearfix:after {
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.button {
+    border:1px solid #fff;
+    line-height:1;
+}
+
+.box {
+    position:relative;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s;
+}
+
+.box:after {
+    content:'';
+    display:block;
+}
+
+.box.type01:after {
+    padding-bottom:105.93%;
+}
+
+.box.type02:after {
+    padding-bottom:70.62%;
+}
+
+.box.type03:after {
+    padding-bottom:141.24%;
+}
+
+.box.type04:after {
+    padding-bottom:105.93%;
+}
+
+.box.type05:after {
+    padding-bottom:52.97%;
+}
+
+.box.type06:after {
+    padding-bottom:35.31%;
+}
+
+.single-text {
+    position:absolute;
+    padding:20px;
+    font-size:22px;
+    line-height:29px;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+.textbox {
+    background: #354e36;
+    font-weight:300;
+    text-align: center;
+}
+
+.textbox-inner {
+    position:absolute;
+    top:50%;
+    left:0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.textbox-inner .button {
+    position:relative;
+    display:inline-block;
+    width: 100%;
+    padding:5px 0;
+    font-size:12px;
+    overflow:hidden;
+}
+
+.textbox-inner .button:after {
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    bottom:-100%;
+    left:0;
+    background:#fff;
+    transition: all 0.2s;
+    z-index:-1;
+}
+
+.textbox-inner .button:hover {
+    color:#000;
+}
+
+.textbox-inner .button:hover:after {
+    bottom:0;
+}
+
+.textbox-inner p {
+    margin-bottom:1em;
+    font-size:16px;
+}
+
+@media (min-width:650px) {
+
+    .textbox-inner p {
+        font-size:30px;
+    }
+}
+
+@media (min-width:760px) {
+
+    .single-text {
+        font-size:16px;
+    }
+
+    .textbox-inner p {
+        font-size:20px;
+    }
+}
+
+@media (min-width:1180px) {
+
+    .textbox-inner p {
+        font-size:22px;
+    }
+
+    .textbox-inner .button {
+        font-size:16px;
+    }
+    .sns_link {
+        margin: 0 auto 50px auto;
+    }
+}
+
+.photo02 p {
+    right:0;
+    text-align:right;
+}
+
+.photo04 p {
+    right:0;
+    text-align:right;
+}
+
+.photo09 p {
+    bottom:100px;
+}
+
+.photo13 p {
+    width:100%;
+    text-align: center;
+}
+
+.photo01 {background-image:url("images/107B1927.jpg");}
+.photo02 {background-image:url("images/107B1935.jpg");}
+.photo03 {background-image:url("images/107B1950.jpg");}
+.photo04 {background-image:url("images/mrf01.jpeg");}
+.photo05 {background-image:url("images/107B1969.jpg");}
+.photo06 {background-image:url("images/107B1975.jpg");}
+.photo07 {background-image:url("images/1124_01.jpeg");}
+.photo08 {background-image:url("images/107B1986.jpg");}
+.photo09 {background-image:url("images/cprbandcut02.jpeg");}
+.photo10 {background-image:url("images/107B2003.jpg");}
+.photo11 {background-image:url("images/1124_02.jpeg");}
+.photo12 {background-image:url("images/mrf02.jpeg");}
+.photo13 {background-image:url("images/107B1953.jpg");}
+.photo14 {background-image:url("images/cprbandcut01.jpeg");}
