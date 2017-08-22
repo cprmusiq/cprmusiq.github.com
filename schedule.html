@@ -131,12 +131,12 @@
 
             </div> <!-- end container -->
         <div class="schedule-wrapper">
-            <div class="scd01">
+            <div class="scd01" style="display: none;">
                 <p><i class="fa fa-check" aria-hidden="true"></i>
                 <span class="date-s"></span>일
                 홍대 버스킹 17:30~</p>
             </div>
-            <div class="scd02">
+            <div class="scd02" style="display: none;">
                 <p><i class="fa fa-check" aria-hidden="true"></i>
                 <span class="date-s"></span>일
                 싱글 2집 발표 17:30~</p>
@@ -159,20 +159,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        $('.scd01').hide();
-        $('.scd02').hide();
-
-        $('.event').click(function(){
-            var theDate = $(this).text();
-            $('.date-s').text(theDate);
-            if(theDate == 11){
-              $('.scd01').show().siblings().hide();
-            }else if(theDate == 22){
-              $('.scd02').show().siblings().hide();
-            }
-        });
-    </script>
+    <script src="js/schedule.js"></script>
 </body>
 
 </html>
