@@ -12,3 +12,14 @@
 		font-size: 50px;
 	}
 }
+
+@media (max-width: 392px){
+	.scd .calendar td {
+	    height: 3em;
+	    line-height: 2.2em;
+	    width: 3em;
+	}
+	.scd h2 {
+	    font-size: 1.5em;
+	}
+}
