@@ -18,9 +18,11 @@ $(document).ready(function() {
         var theDate = $(this).text();
         $('.date-s').text(theDate);
         if(theDate == eventDate1){
-          $('.scd01').show().siblings().hide();
+          $('.scd01').toggle().siblings().hide();
         }else if(theDate == eventDate2){
-          $('.scd02').show().siblings().hide();
+          $('.scd02').toggle().siblings().hide();
+        }else if(theDate == eventDate3){
+          $('.scd03').toggle().siblings().hide();
         }
     });
 });
