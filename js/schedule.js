@@ -9,9 +9,19 @@ $(document).ready(function() {
 	});  
 
 	//set eventdats
-	var eventDate1 = 25;
+	var eventDate1 = 26;
 	var eventDate2 = null;
 	var eventDate3 = null;
+
+	$('.calendar td').each(function(){
+	    if($(this).text() == eventDate1){
+	    	$(this).addClass('event');
+	    }else if ($(this).text() == eventDate2){
+	    	$(this).addClass('event');
+	    }else if ($(this).text() == eventDate3){
+	    	$(this).addClass('event');
+	    }
+	});
 
 	//show specific contents of events
 	$('.event').click(function(){
