@@ -16,9 +16,9 @@ $(document).ready(function() {
 	$('.calendar td').each(function(){
 	    if($(this).text() == eventDate1){
 	    	$(this).addClass('event');
-	    }else if ($(this).text() == eventDate2){
+	    }if ($(this).text() == eventDate2){
 	    	$(this).addClass('event');
-	    }else if ($(this).text() == eventDate3){
+	    }if ($(this).text() == eventDate3){
 	    	$(this).addClass('event');
 	    }
 	});
@@ -29,9 +29,9 @@ $(document).ready(function() {
         $('.date-s').text(theDate);
         if(theDate == eventDate1){
           $('.scd01').toggle().siblings().hide();
-        }else if(theDate == eventDate2){
+        }if(theDate == eventDate2){
           $('.scd02').toggle().siblings().hide();
-        }else if(theDate == eventDate3){
+        }if(theDate == eventDate3){
           $('.scd03').toggle().siblings().hide();
         }
     });
