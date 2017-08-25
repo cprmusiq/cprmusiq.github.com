@@ -10,8 +10,8 @@ $(document).ready(function() {
 
 	//set eventdats
 	var eventDate1 = 26;
-	var eventDate2 = null;
-	var eventDate3 = null;
+	var eventDate2 = 27;
+	var eventDate3 = 28;
 
 	$('.calendar td').each(function(){
 	    if($(this).text() == eventDate1){
