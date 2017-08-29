@@ -37,10 +37,10 @@ $(document).ready(function() {
     });   
 });
 
-$(window).load(function() {
+$(window).onload(function() {
 	//but not for the pre or next month's date 
 	$('.calendar td').each(function(){
-		if($(this).hasClass('prev-month, next-month')){
+		if($(this).hasClass('prev-month') || $(this).hasClass('next-month')){
 			$(this).removeClass("current-day");
 		}
 	});
