@@ -5,7 +5,7 @@ $(document).ready(function() {
 	$('.calendar td').each(function(){
 	    if($(this).text() == dd){
 	    	$(this).addClass("current-day");
-	    }if($(this).hasClass('.prev-month, .next-month')){
+	    }if($(this).hasClass('prev-month, next-month')){
 	    	$(this).removeClass("current-day");
 	    }
 	});  
