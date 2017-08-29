@@ -8,10 +8,8 @@ $(document).ready(function() {
 	    }
 	});
 	//but not for the pre or next month's date 
-	$('.calendar td').each(function(){
-	    if($(this).hasClass("prev-month, next-month")){
-	    	$(this).removeClass("current-day");
-	    }
+	$('.calendar td').hasClass("prev-month, next-month").each(function(){
+	    $(this).removeClass("current-day");
 	});  
 
 	//set eventdats
