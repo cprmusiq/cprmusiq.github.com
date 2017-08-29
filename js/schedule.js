@@ -7,7 +7,7 @@ $(document).ready(function() {
 	    	$(this).addClass("current-day");
 	    }
 	});
-	//but not for pre or next month's date 
+	//but not for the pre or next month's date 
 	$('.calendar td').each(function(){
 	    if($(this).hasClass("prev-month, next-month")){
 	    	$(this).removeClass("current-day");
