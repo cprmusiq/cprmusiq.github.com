@@ -34,9 +34,11 @@ $(document).ready(function() {
         }if(theDate == eventDate3){
           $('.scd03').toggle().siblings().hide();
         }
-    });
+    });   
+});
 
-    //but not for the pre or next month's date 
+$(window).load(function() {
+	//but not for the pre or next month's date 
 	$('.calendar td').each(function(){
 		if($(this).hasClass('prev-month, next-month')){
 			$(this).removeClass("current-day");
