@@ -7,6 +7,12 @@ $(document).ready(function() {
 	    	$(this).addClass("current-day");
 	    }
 	});
+	//but not for the pre or next month's date 
+	$('.calendar td').each(function(){
+		if($(this).hasClass('prev-month') || $(this).hasClass('next-month')){
+			$(this).removeClass("current-day");
+		}
+	});
 	  
 	//set eventdats
 	var eventDate1 = 19;
@@ -35,13 +41,4 @@ $(document).ready(function() {
           $('.scd03').toggle().siblings().hide();
         }
     });   
-});
-
-$(window).onload(function() {
-	//but not for the pre or next month's date 
-	$('.calendar td').each(function(){
-		if($(this).hasClass('prev-month') || $(this).hasClass('next-month')){
-			$(this).removeClass("current-day");
-		}
-	});
 });
