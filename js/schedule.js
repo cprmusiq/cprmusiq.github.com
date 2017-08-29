@@ -7,11 +7,7 @@ $(document).ready(function() {
 	    	$(this).addClass("current-day");
 	    }
 	});
-	//but not for the pre or next month's date 
-	$('.calendar td').hasClass("prev-month, next-month").each(function(){
-	    $(this).removeClass("current-day");
-	});  
-
+	  
 	//set eventdats
 	var eventDate1 = 19;
 	var eventDate2 = 12;
@@ -39,4 +35,11 @@ $(document).ready(function() {
           $('.scd03').toggle().siblings().hide();
         }
     });
+
+    //but not for the pre or next month's date 
+	$('.calendar td').each(function(){
+		if($(this).hasClass('prev-month, next-month')){
+			$(this).removeClass("current-day");
+		}
+	});
 });
