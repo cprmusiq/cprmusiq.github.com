@@ -15,8 +15,8 @@ $(document).ready(function() {
 	});
 	  
 	//set eventdats
-	var eventDate1 = 19;
-	var eventDate2 = 12;
+	var eventDate1 = 18;
+	var eventDate2 = 25;
 	var eventDate3 = null;
 
 	$('.calendar td').each(function(){
