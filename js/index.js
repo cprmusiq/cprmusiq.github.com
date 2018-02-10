@@ -82,5 +82,6 @@ $(document).ready(function() {
                 </div>
             </section>`
          )
+  		$(this).remove();
   	});
 });
