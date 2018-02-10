@@ -140,3 +140,8 @@ ul.navigation{
 .album-img img{
 	width: 100%;
 }
+
+.loading::after{
+	content: 'loading';
+}
+
