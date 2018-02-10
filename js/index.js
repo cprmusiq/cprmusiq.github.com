@@ -1,3 +1,18 @@
+const DETAILS = [
+    {
+        songID: 3,
+        title: 'Eyes Only(아이즈온리)',
+        date:'2017.12.05',
+        content: '3rd single album'
+    },
+    {
+        songID: 4,
+        title: 'Love Bites(나도문득니가)',
+        date:'2018.01.12',
+        content: '4th single album'
+    }
+] 
+
 $(document).ready(function() {
 	//landing page
 	$.ajax('home.html', {
@@ -36,5 +51,36 @@ $(document).ready(function() {
 	        	$('.main').removeClass('loading');
 	      	}
         });
+  	});
+
+  	$('.see-more').on('click', 'button', function(event) {
+  		event.preventDefault();
+  		var wrapper = $(this).closest('.albums-wrapper');
+  		wrapper.append(
+  			`<section class="eyesonly hide">
+                <div class="section-inner-wrap">
+                    <div class="album-img">
+                        <img src="images/eyesonly_cover.jpg" alt="eyesonly_cover">
+                    </div>
+                    <div class="album-info">
+                        <p>${DETAILS[0].title}</p>
+                        <p>${DETAILS[0].date}</p>
+                        <p>${DETAILS[0].content}</p>
+                    </div>
+               </div>
+            </section>
+            <section class="love-bites hide">
+                <div class="section-inner-wrap">
+                    <div class="album-img">
+                        <img src="images/lovebites_cover.jpg" alt="lovebites_cover">
+                    </div>
+                    <div class="album-info">
+                        <p>${DETAILS[1].title}</p>
+                        <p>${DETAILS[1].date}</p>
+                        <p>${DETAILS[1].content}</p>
+                    </div>
+                </div>
+            </section>`
+         )
   	});
 });
