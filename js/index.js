@@ -5,7 +5,7 @@ $(document).ready(function() {
             $('.main').html(response).show();
           }
     });
-	$('.navigation').on('click', 'home-li', function(e) {
+	$('.navigation').on('click', '.home-li', function(e) {
 		$('.main > div').remove();
 		e.preventDefault();
         $.ajax('home.html', {
@@ -24,7 +24,7 @@ $(document).ready(function() {
           }
         });
   	});
-  	$('.navigation').on('click', 'albums-li', function(e) {
+  	$('.navigation').on('click', '.albums-li', function(e) {
 		$('.main > div').remove();
 		e.preventDefault();
         $.ajax('albums.html', {
