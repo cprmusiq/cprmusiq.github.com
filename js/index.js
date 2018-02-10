@@ -52,37 +52,4 @@ $(document).ready(function() {
 	      	}
         });
   	});
-
-    //see more button
-  	$('.see-more').on('click', 'button', function(event) {
-  		event.preventDefault();
-  		var wrapper = $(this).closest('.albums-wrapper');
-  		wrapper.append(
-  			`<section class="eyesonly">
-                <div class="section-inner-wrap">
-                    <div class="album-img">
-                        <img src="images/eyesonly_cover.jpg" alt="eyesonly_cover">
-                    </div>
-                    <div class="album-info">
-                        <p>${DETAILS[0].title}</p>
-                        <p>${DETAILS[0].date}</p>
-                        <p>${DETAILS[0].content}</p>
-                    </div>
-               </div>
-            </section>
-            <section class="love-bites">
-                <div class="section-inner-wrap">
-                    <div class="album-img">
-                        <img src="images/lovebites_cover.jpg" alt="lovebites_cover">
-                    </div>
-                    <div class="album-info">
-                        <p>${DETAILS[1].title}</p>
-                        <p>${DETAILS[1].date}</p>
-                        <p>${DETAILS[1].content}</p>
-                    </div>
-                </div>
-            </section>`
-         )
-  		$(this).remove();
-  	});
 });
