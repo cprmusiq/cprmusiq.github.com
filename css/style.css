@@ -137,3 +137,27 @@ ul.navigation{
     margin: 0 auto;
     margin-bottom: 20px;
 }
+.album-img img{
+	width: 100%;
+}
+.see-more{
+    width: 100%;
+    max-width: 400px;
+    margin: 3em auto;
+}
+.see-more button{
+	background: #e4e4e4;
+    width: 100%;
+    border: 1px solid #545454;
+    height: 3em;
+    border-radius: 13px;
+    filter: drop-shadow(0.9px 0.9px 2px #545454);
+    font-size: 2em;
+}
+.see-more button:focus{
+	filter: none;
+}
+
+.loading::after{
+	content: 'loading...'
+}

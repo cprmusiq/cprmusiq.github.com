@@ -53,11 +53,12 @@ $(document).ready(function() {
         });
   	});
 
+    //see more button
   	$('.see-more').on('click', 'button', function(event) {
   		event.preventDefault();
   		var wrapper = $(this).closest('.albums-wrapper');
   		wrapper.append(
-  			`<section class="eyesonly hide">
+  			`<section class="eyesonly">
                 <div class="section-inner-wrap">
                     <div class="album-img">
                         <img src="images/eyesonly_cover.jpg" alt="eyesonly_cover">
@@ -69,7 +70,7 @@ $(document).ready(function() {
                     </div>
                </div>
             </section>
-            <section class="love-bites hide">
+            <section class="love-bites">
                 <div class="section-inner-wrap">
                     <div class="album-img">
                         <img src="images/lovebites_cover.jpg" alt="lovebites_cover">
