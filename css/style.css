@@ -146,13 +146,13 @@ ul.navigation{
     margin: 3em auto;
 }
 .see-more button{
-	background: #e4e4e4;
-    width: 100%;
+    background: #ffffff;
+    width: 50%;
     border: 1px solid #545454;
-    height: 3em;
-    border-radius: 13px;
+    height: 2.1em;
+    border-radius: 5px;
     filter: drop-shadow(0.9px 0.9px 2px #545454);
-    font-size: 2em;
+    font-size: 1.3em;
 }
 .see-more button:focus{
 	filter: none;

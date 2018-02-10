@@ -25,7 +25,7 @@ $(document).ready(function() {
 	$('.navigation').on('click', '.home-li', function(e) {
 		e.preventDefault();
         $.ajax('home.html', {
-    		timeout: 3000,	
+    		timeout: 5000,	
 	        success: function(response) {
 	        	$('.main').html(response);
 	        },
@@ -40,7 +40,7 @@ $(document).ready(function() {
   	$('.navigation').on('click', '.albums-li', function(e) {
 		e.preventDefault();
         $.ajax('albums.html', {
-        	timeout: 3000,
+        	timeout: 5000,
         	success: function(response) {
             	$('.main').html(response);
           	},
